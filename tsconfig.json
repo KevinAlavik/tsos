@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "es2017", // or higher, like "es2018", "es2019", etc.
+    "outDir": "./dist",
+    "rootDir": "./src",
+    // other options...
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
