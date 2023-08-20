@@ -1,13 +1,19 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.FileSystem = void 0;
 class File {
+    name;
+    content;
     constructor(name, content) {
         this.name = name;
         this.content = content;
     }
 }
 class Directory {
+    name;
+    children = [];
     constructor(name) {
         this.name = name;
-        this.children = [];
     }
     addFile(file) {
         this.children.push(file);
@@ -16,7 +22,8 @@ class Directory {
         this.children.push(directory);
     }
 }
-export class FileSystem {
+class FileSystem {
+    root;
     constructor() {
         this.root = new Directory('/');
     }
@@ -82,3 +89,4 @@ export class FileSystem {
         }
     }
 }
+exports.FileSystem = FileSystem;

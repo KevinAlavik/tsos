@@ -2,14 +2,21 @@
   "name": "tsos",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/main.ts",
+  "main": "dist/main.js",
   "scripts": {
-    "build": "npx tsc && node ."
+    "build": "npx tsc",
+    "boot": "node .",
+    "dev": "npx tsc && node ."
   },
   "keywords": [],
   "author": "",
-  "license": "ISC", 
+  "license": "ISC",
   "devDependencies": {
+    "@types/node": "^20.5.1",
     "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "fetch": "^1.1.0",
+    "fs": "^0.0.1-security"
   }
 }

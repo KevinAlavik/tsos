@@ -1,0 +1,19 @@
+{
+    "DiskInfo": {
+        "label": "main",
+        "type": "tsos-ehd",
+        "size": 1204
+    },
+    "Content": [
+        {
+            "type": "file",
+            "name": "test.txt",
+            "content": "test file"
+        },
+        {
+            "type": "directory",
+            "name": "test",
+            "content": []
+        }
+    ]
+}

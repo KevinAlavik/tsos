@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es2017", // or higher, like "es2018", "es2019", etc.
+    "target": "ES2022", // or another appropriate target version
+    "module": "CommonJS",
     "outDir": "./dist",
     "rootDir": "./src",
     // other options...
